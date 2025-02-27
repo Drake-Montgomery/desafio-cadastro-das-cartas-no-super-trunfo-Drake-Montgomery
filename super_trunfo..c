@@ -62,7 +62,7 @@ int main() {
     limpar_buffer();
     printf("Digite o nome da cidade:\n");
     scanf(" %[^\n]%*c", C1_cidade); //funciona so precisa do espaco
-    limpar_buffer();
+    //limpar_buffer();
     printf("Digite a populacao da cidade:\n");
     scanf("%d", &C1_populacao);
     limpar_buffer();
@@ -91,14 +91,14 @@ int main() {
     // Entrada de dados da 2ª carta
     printf("Vamos entrar com os dados da 2ª carta\n");
     printf("Digite uma letra para representar o estado[A, B, C, D, E, F, G, H]:\n");
-    scanf("%s", C2_Estado);
+    scanf("%c", & C2_Estado);
     limpar_buffer();
     printf("Escolha um numero para o codigo da carta, uma letra do estado seguida de um nuemro [A01, B09, C03]:\n");
     scanf("%s", C2_CodCarta);
     limpar_buffer();
     printf("Digite o nome da cidade:\n");
     scanf(" %[^\n]%*c", C2_cidade);
-    limpar_buffer();
+    //limpar_buffer();
     printf("Digite a populacao da cidade:\n");
     scanf("%d", &C2_populacao);
     limpar_buffer();
@@ -119,7 +119,7 @@ int main() {
     printf("Codigo da carta: %s\n", C2_CodCarta);
     printf("Nome da cidade: %s\n", C2_cidade);
     printf("Populacao: %d\n", C2_populacao);
-    printf("Area: %.2f\n km²", C2_area);
+    printf("Area: %.2f km²\n", C2_area);
     printf("PIB: R$%.2f bilhões de reais\n", C2_pib);
     printf("Numero de pontos turisticos: %d\n", C2_numero_de_pontos_turisticos);
     printf("===================================\n");
